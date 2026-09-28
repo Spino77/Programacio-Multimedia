@@ -15,7 +15,9 @@ fun main() {
 
             }
             2 -> {
-                inv.listProducts()
+                for (x in inv.listProducts()) {
+                    println(x.toString())
+                }
             }
             3 -> {
                 inv.updateProduct()

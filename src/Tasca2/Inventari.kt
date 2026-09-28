@@ -7,10 +7,8 @@ class Inventari {
         list.add(product)
     }
 
-    fun listProducts() {
-        for (x in list) {
-            println(x.toString())
-        }
+    fun listProducts(): MutableList<Producte> {
+        return list
     }
 
     fun updateProduct(id: Int, newPrice: Int, newStock: Int) {
