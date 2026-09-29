@@ -11,7 +11,7 @@ class Inventari {
         return list
     }
 
-    fun updateProduct(id: Int, newPrice: Int, newStock: Int) {
+    fun updateProduct(id: Int, newPrice: Float, newStock: Int) {
         var pos: Int
         for (x in list) {
             if (x.identifier == id) {
